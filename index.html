@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messy Job Tracker - Organize Your Career Chaos</title>
+    <meta name="description" content="A Chrome Extension to track and organize your job applications directly from Gmail. Simplify your job hunt.">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #1a73e8, #673ab7);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 3em;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #f1c40f; /* Yellow/Orange */
+            color: #333;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn:hover {
+            background-color: #e6b800; /* Darker yellow */
+            color: #222;
+        }
+        section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        section:nth-of-type(even) {
+            background-color: #eef1f0;
+        }
+        h2 {
+            font-size: 2.2em;
+            color: #1a73e8;
+            margin-bottom: 30px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .feature-item {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+        .feature-item h3 {
+            color: #4CAF50; /* Green */
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        .feature-item p {
+            font-size: 0.95em;
+            color: #555;
+        }
+        .privacy-section {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .privacy-section .btn {
+            background-color: #2ecc71; /* Green */
+            color: white;
+            box-shadow: none;
+        }
+        .privacy-section .btn:hover {
+            background-color: #27ae60;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+        footer a {
+            color: #f1c40f;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Messy Job Tracker</h1>
+            <p>Organize Your Career Chaos - Track job applications directly from Gmail with intelligence and ease.</p>
+            <a href="[YOUR_CHROME_WEB_STORE_LINK_HERE]" target="_blank" class="btn">Add to Chrome - It's Free!</a>
+        </div>
+    </header>
+
+    <section id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Seamless Gmail Integration</h3>
+                    <p>Connects directly to your Gmail to automatically identify and track job application-related emails, turning chaos into clarity.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Smart Application Tracking</h3>
+                    <p>Organizes job emails by status (applied, interview, offer, rejected) based on smart analysis, giving you a clear overview of your pipeline.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Domain Exclusion</h3>
+                    <p>Easily exclude specific domains (e.g., newsletters, spam) from being tracked, ensuring your focus remains on genuine job applications.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Your Data, Your Browser</h3>
+                    <p>All your application data is stored locally within your Chrome browser, ensuring your privacy and control over your sensitive information.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Intuitive Dashboard</h3>
+                    <p>Get a quick glance at your application statistics, upcoming follow-ups, and overall progress with a clean and simple interface.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Lightweight & Fast</h3>
+                    <p>Designed to be efficient and non-intrusive, the extension works silently in the background without slowing down your Browse experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="privacy-section">
+        <div class="container">
+            <h2>Your Privacy is Our Priority</h2>
+            <p>We believe in full transparency. The Messy Job Tracker processes your data locally and never sends your sensitive information to external servers. Learn more about how we protect your data.</p>
+            <a href="https://kvssankar.github.io/messyjobtracker/privacy_policy" target="_blank" class="btn">Read Our Privacy Policy</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Messy Job Tracker. All rights reserved.</p>
+            <p>
+                <a href="https://kvssankar.github.io/messyjobtracker/privacy_policy" target="_blank">Privacy Policy</a> |
+                <a href="https://kvssankar.github.io/messyjobtracker/terms_of_service" target="_blank">Terms of Service</a> |
+                <a href="mailto:kvs.sankar001@gmail.com">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
